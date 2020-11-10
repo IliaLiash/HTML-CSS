@@ -1,0 +1,42 @@
+Добавьте поле для ввода фамилии c идентификатором lastname (id="lastname")
+Добавьте поле для ввода имени c идентификатором firstname (id="firstname")
+Добавьте поле для ввода отчества c идентификатором patronymic (id="patronymic")
+Добавьте выпадающий список c идентификатором topic (id="topic")
+Добавьте пункты в выпадающий список
+Добавьте флажок c идентификатором email (id="email")
+Добавьте кнопку для отправки данных на сервер c идентификатором send (id="send")
+Добавьте кнопку для сброса данных формы c идентификатором clear (id="clear")
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Интернет-магазин</title>
+    <meta charset="utf-8">
+</head>
+<body>
+    
+    <h1>Связаться с нами!</h1>
+    <form id="feedback">
+	<! -- ФОРМА С КНОПКАМИ -->
+        Фамилия:<br>
+        <input type="text" id="lastname"><br>
+        Имя:<br>
+        <input type="text" id="patronymic"><br>
+        Отчество:<br>
+        <input type="text" id="firstname"><br>
+
+        
+	<! -- ВЫПАДАЮЩИЙ СПИСОК -->
+        <select id="topic">
+            <option value=1>Предложение</option>
+            <option value=2>Вопрос</option>
+        </select>
+        
+	<! -- ФЛАЖОК, КНОПКИ -->
+        <input type=checkbox id=email>
+        <input type=submit id=send>
+        <input type=reset id=clear>
+
+    </form>
+</body>
+</html> 
